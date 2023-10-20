@@ -1,0 +1,5 @@
+FROM	alpine
+
+COPY	p2/p2-host* /tmp/.
+COPY	p3/p3-host* /tmp/.
+RUN	apk update && apk add iproute2 busybox
